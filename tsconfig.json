@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "target": "es5",
+      "module": "commonjs",
+      "lib": ["es2015", "dom"],
+      "strict": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "declaration": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      // "moduleResolution": "node",
+      // "resolveJsonModule": true,
+      // "jsx": "react",
+      // "baseUrl": "./src",  // 设置基础路径，确保导入模块时相对路径从这个目录开始
+      // "paths": {
+      //   "*": ["types/*"]  // 自定义类型定义文件的路径，可选
+      // },
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
