@@ -14,7 +14,7 @@ module.exports = {
   entry: path.resolve(__dirname, '../src/libs/index.ts'),
   devtool: 'source-map',
   output: {
-    publicPath: '/',
+    publicPath: './',
     filename: `${libraryName}.js`,
     path: path.resolve(__dirname, '../dist'), // 打包后的目录
     library: {
@@ -30,14 +30,6 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
       {
         test: /\.ts$/, // .ts或者tsx后缀的文件，就是typescript文件
         use: 'ts-loader', // 就是上面安装的ts-loader
